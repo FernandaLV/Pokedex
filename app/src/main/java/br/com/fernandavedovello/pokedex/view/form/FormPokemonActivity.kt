@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.fernandavedovello.pokedex.R
 
-class formPokemonActivity : AppCompatActivity() {
+class FormPokemonActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
