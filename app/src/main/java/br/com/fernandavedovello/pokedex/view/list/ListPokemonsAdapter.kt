@@ -33,11 +33,10 @@ class ListPokemonsAdapter(
         fun bindView(pokemon: Pokemon,
                      picasso: Picasso,
                      clickListener: (Pokemon) -> Unit) = with(itemView) {
-            tvPokemonName.text = pokemon.name
-            tvPokemonNumber.text = pokemon.number
+            tvPokemonName.text = pokemon.nome
+            tvPokemonNumber.text = pokemon.numero
 
-            picasso.load("https://pokedexdx.herokuapp.com${pokemon.imageURL}").into(ivPoke
-                    mon)
+            picasso.load("https://pokedexdx.herokuapp.com${pokemon.urlImagem}").into(ivPokemon)
             setOnClickListener { clickListener(pokemon) }
         }
     }
